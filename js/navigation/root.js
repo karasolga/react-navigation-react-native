@@ -1,6 +1,6 @@
 import {createStackNavigator} from 'react-navigation'
 import TabNavigator from './tabs'
-import ModalScreen from '../screens/modal'
+import ModalNavigator from './modal'
 
 const RootStack = createStackNavigator(
   {
@@ -8,7 +8,7 @@ const RootStack = createStackNavigator(
       screen: TabNavigator,
     },
     MyModal: {
-      screen: ModalScreen,
+      screen: ModalNavigator,
     },
   },
   {
