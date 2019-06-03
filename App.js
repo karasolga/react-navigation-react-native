@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {createAppContainer} from 'react-navigation'
-import TabNavigator from './js/navigation/tabs'
+import RootStack from './js/navigation/root'
 
 type Props = {};
-const AppContainer = createAppContainer(TabNavigator);
+const AppContainer = createAppContainer(RootStack);
 
 export default class App extends Component<Props> {
   render() {
